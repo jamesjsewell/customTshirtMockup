@@ -1,0 +1,18 @@
+#container{
+	box-sizing: border-box;
+	font-size: 0px;
+	width: 400px;
+	margin: auto;
+	background: grey;
+}
+
+.shirtImages{
+	max-width: 100%;
+	display: inline-block;
+}
+
+.shirtBox{
+	max-width: 44%;
+	display: inline-block;
+	background: blue;
+}
