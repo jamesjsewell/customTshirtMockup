@@ -1,85 +1,81 @@
 *{
-	--border-size: 4px;
-	--border-color: #73bcea;
-	--fonticon-color: #73bcea;
-	--yellow:#f9c00c;
-	--blue:#00b9f1;
-	--purple:#7200da;
-	--orange:#f9320c;
+	--tea-green: #C8FFBE;
+	--pale-golden-rod: #EDFFAB;
+	--rosey-brown: #BA9593;
+	--pomp-and-power: #89608E;
+	--halaya-ube: #623B5A;
+	--border-size: 2px;
+	--border-color: var(--tea-green);
 	box-sizing: border-box;
+	font-size: 0;
 }
 
-#container{
-	font-size: 0px;
-	width: 900px;
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+
+.page{
 	margin: auto;
-	background: grey;
 }
-.shirtImage{
-	padding: 15px;
-	max-width: 100%;
+
+.postBox{
+	border: var(--border-size) solid var(--border-color)
+	background-color: var(--tea-green);
+	width: 100%;
 	vertical-align: center;
 }
 
 .shirtBox{
-	border: var(--border-size) solid var(--border-color);
-	background: white;
-	margin: 5px;
-	width: 30%;
-	display: inline-block;
 
 }
 
-#control1,#control2,#control3,#control4,#control5{
-	display: inline-block;
-	width: 20%;
-	border-right: var(--border-size) solid var(--border-color);
-	border-top: var(--border-size) solid var(--border-color);
-}
-#control3,#control4{
-	position: relative;
-}
-#control5{
-	border-right: 0;
-}
-.colorPopup,.sizePopup{
-	opacity: 0;
-	background: white;
-	border: var(--border-size) solid var(--border-color);
-	bottom: 100%;
-	position: absolute;	
-}
-#colors1and2,#colors3and4{
-	padding: 5px;
-	display: block;
-}
-#color1,#color2,#color3,#color4{
-	display: inline-block;
-	width:2%;
-	height:2%;
-	text-align: center;
-}
-#color2,#color4{
-	padding-left: 40px;
-}
-#color1{color:var(--yellow); }#color2{color: var(--blue);}#color3{color: var(--purple);}#color4{color: var(--orange);}
+.shirtImage{
 
-.material-icons{
-	text-align: center;
-	vertical-align: center;
-	margin: auto;
-	font-size: 46px;
-	width: 100%;
-	height: 100%;
-	color: var(--fonticon-color);
 }
 
-.userControls{
-	margin: auto;
-	width: 100%;
+.userOptions{
+
 }
 
-#button3:hover > .sizePopup{
-	opacity: 1;  
+.optionIcon1,.optionIcon2,.optionIocn3,.optionIcon4,.optionIcon5{
+
 }
 
+.sizePopup{
+
+}
+
+.sizeIcon1,.sizeIcon2,.sizeIcon3,.sizeIcon4{
+
+}
+
+.colorPopup{
+
+}
+
+.firstRow{
+
+}
+
+.secondRow{
+
+}
+
+.shirtLabel{
+
+}
+
+.nameLabel,.priceLabel{
+
+}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
