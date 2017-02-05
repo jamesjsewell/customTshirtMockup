@@ -1,72 +1,194 @@
-*{
-	--tea-green: #C8FFBE;
-	--pale-golden-rod: #EDFFAB;
-	--rosey-brown: #BA9593;
-	--pomp-and-power: #89608E;
-	--halaya-ube: #623B5A;
-	--border-size: 2px;
-	--border-color: var(--tea-green);
-	box-sizing: border-box;
-	font-size: 0;
-}
+
 
 /* Desktops and laptops ----------- */
 @media only screen  and (min-width : 1224px) {
+*{
+	
+	box-sizing: border-box;
+	font-size: 0;
+	--zcolor-primary: #72b0dc;
+	--zcolor-background: white;
+	--border-size: 3px;
+	--border-color: var(--zcolor-primary);
+}
 
 .page{
+	
+	width: 100%;
 	margin: auto;
+
+}
+
+.entry{
+	vertical-align: center;
+	text-align: center;
+	margin: auto;
+	
 }
 
 .postBox{
-	border: var(--border-size) solid var(--border-color)
-	background-color: var(--tea-green);
-	width: 100%;
-	vertical-align: center;
+	width: 28%;
+	max-width: 100%;
+	display: inline-block;
+	margin: 2%;
+	border: var(--border-size) solid var(--border-color);
 }
 
 .shirtBox{
+	width: 100%;
+	background-color: var(--zcolor-background);
+	position: relative;
+}
 
+.rotateIcon{
+	color: var(--zcolor-primary);
+	position: absolute;
+	left: 90%;
 }
 
 .shirtImage{
-
+	max-width: 100%;
+	padding: 10%;
 }
 
 .userOptions{
-
+	background: white;
+	width: 100%;	
+	max-width: 100%;
 }
 
-.optionIcon1,.optionIcon2,.optionIocn3,.optionIcon4,.optionIcon5{
+.button1,.button2,.button3,.button4,.button5{
+	display: inline-block;
+	position: relative;
+}
 
+.optionIcon1,.optionIcon2,.optionIcon3,.optionIcon4,.optionIcon5{
+	color: var(--zcolor-primary);
+	font-size: 55.2px;
+	margin: auto;
+	
 }
 
 .sizePopup{
 
+	vertical-align: center;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	background: white;
+	border: var(--border-size) solid var(--border-color);
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+ 	margin-right: auto;
+
 }
 
 .sizeIcon1,.sizeIcon2,.sizeIcon3,.sizeIcon4{
-
+	display: block;
+	font-size: 50px;
+	padding-left:0%;
+	padding-right:0%;
 }
 
 .colorPopup{
+	text-align: center;
+ 	vertical-align: center;
+	background: white;
+	border: var(--border-size) solid var(--border-color);
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+ 	margin-right: auto;
+ 	transform: translateX(-25%);
+ 	
 
 }
 
-.firstRow{
+.colorIcon1,.colorIcon2,.colorIcon3,.colorIcon4,.colorIcon5{
+	display: inline-block;
+	margin-left: auto;
+ 	margin-right: auto;
+ 	text-align: center;
+ 	vertical-align: center;
+	font-size: 50px;
+}
+
+.colorIcon1{color:#ff9f1c;} .colorIcon2{color:#e71d36;} .colorIcon3{color:#011627;} .colorIcon4{color:#72b0dc;}
+
+.downArrow{
+	width: 22px;
+	height: 22px;
+	border-bottom: var(--border-size) solid var(--border-color);
+	border-right: var(--border-size) solid var(--border-color);
+	background: white;
+	position: absolute;
+	transform: rotate(45deg);
+	text-align: center;
+	vertical-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	left: 0;
+	right: 0;
+	top:95%;
+
+}
+.downArrowColor{
+	width: 12px;
+	height: 12px;
+	border-bottom: var(--border-size) solid var(--border-color);
+	border-right: var(--border-size) solid var(--border-color);
+	background: white;
+	position: absolute;
+	transform: rotate(45deg);
+	text-align: center;
+	vertical-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	left: 0;
+	right: 0;
+	bottom:-8%;
 
 }
 
-.secondRow{
-
-}
 
 .shirtLabel{
+	background: white;
+	margin:0px;
+	padding:0px;
 
 }
 
 .nameLabel,.priceLabel{
+	color: var(--zcolor-primary);
+	font-size: 24px;
+	font-family: 'Slabo 27px', serif;
+	display: inline-block;
+	margin: 0%;
+	padding: 4%;
+}
+.nameLabel{
+	float: left;
+	padding-left: 3%;
+}
+.priceLabel{
+	font-size: 24px;
+	font-family: 'Slabo 27px', serif;
+	display: inline-block;
+	float: right;
 
 }
+
+
+.optionIcon3:hover > .sizePopup{
+	visibility: visible;
+	opacity: 1;
+}
+
 }
 
 /* Smartphones (portrait and landscape) ----------- */
