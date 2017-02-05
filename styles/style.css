@@ -78,7 +78,7 @@
 	background: white;
 	border: var(--border-size) solid var(--border-color);
 	position: absolute;
-	bottom: 100%;
+	bottom: 123%;
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -99,7 +99,7 @@
 	background: white;
 	border: var(--border-size) solid var(--border-color);
 	position: absolute;
-	bottom: 100%;
+	bottom: 123%;
 	left: 0;
 	right: 0;
 	margin-left: auto;
@@ -123,38 +123,35 @@
 .colorIcon1{color:#ff9f1c;} .colorIcon2{color:#e71d36;} .colorIcon3{color:#011627;} .colorIcon4{color:#72b0dc;}
 
 .downArrow{
-	width: 22px;
-	height: 22px;
-	border-bottom: var(--border-size) solid var(--border-color);
-	border-right: var(--border-size) solid var(--border-color);
-	border-left: white;
-	background: rgba(0,0,0,0);
+	width: 0px; 
+  	height: 0px; 
+  	border-left: 10px solid transparent;
+  	border-right: 10px solid transparent;
+  	border-top: 10px solid var(--zcolor-primary);
 	position: absolute;
-	transform: rotate(45deg);
 	text-align: center;
 	vertical-align: center;
 	margin-right: auto;
 	margin-left: auto;
 	left: 0;
 	right: 0;
-	top:95%;
+	bottom:-7%;
 
 }
 .downArrowColor{
-	width: 12px;
-	height: 12px;
-	border-bottom: var(--border-size) solid var(--border-color);
-	border-right: var(--border-size) solid var(--border-color);
-	background: rgba(0,0,0,0);
+	width: 0px; 
+  	height: 0px; 
+  	border-left: 10px solid transparent;
+  	border-right: 10px solid transparent;
+  	border-top: 10px solid var(--zcolor-primary);
 	position: absolute;
-	transform: rotate(45deg);
 	text-align: center;
 	vertical-align: center;
 	margin-right: auto;
 	margin-left: auto;
 	left: 0;
 	right: 0;
-	bottom:-8%;
+	bottom:-13%;
 
 }
 
