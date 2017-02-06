@@ -1,7 +1,3 @@
-
-
-/* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
 *{
 	
 	box-sizing: border-box;
@@ -10,64 +6,85 @@
 	--zcolor-background: white;
 	--border-size: 3px;
 	--border-color: var(--zcolor-primary);
-}
+	}
 
-.page{
+#page{
 	
 	width: 100%;
 	margin: auto;
-
-}
+	}
 
 .entry{
 	vertical-align: center;
-	text-align: center;
-	margin: auto;
-	
-}
+	text-align: center;	
+	}
 
 .postBox{
 	width: 28%;
 	max-width: 100%;
 	display: inline-block;
 	margin: 2%;
-	border: var(--border-size) solid var(--border-color);
-}
+	
+	}
 
 .shirtBox{
 	width: 100%;
 	background-color: var(--zcolor-background);
 	position: relative;
-}
+	}
+
+.shirtAndOptions{
+	border: var(--border-size) solid var(--border-color);
+	}
 
 .rotateIcon{
+
 	color: var(--zcolor-primary);
 	position: absolute;
-	left: 90%;
-}
+	left: 87%;
+	top: 5%;
+	}
 
 .shirtImage{
+	
 	max-width: 100%;
 	padding: 10%;
-}
+	}
 
 .userOptions{
+	border-top: var(--border-size) solid var(--border-color);
+	margin: 0%;
+	padding: 0%;
+	width:100%;
 	background: white;
-	width: 100%;	
-	max-width: 100%;
-}
+	
+	}
 
 .button1,.button2,.button3,.button4,.button5{
+	font-size: 0px;
+	box-sizing: border-box;
 	display: inline-block;
 	position: relative;
-}
+
+	}
 
 .optionIcon1,.optionIcon2,.optionIcon3,.optionIcon4,.optionIcon5{
 	color: var(--zcolor-primary);
 	font-size: 55.2px;
-	margin: auto;
-	
-}
+	max-height: 100%;
+	border-left: var(--border-size) solid var(--border-color);
+	border-right: 0px solid transparent;
+	border-top: 0px solid transparent;
+	border-bottom: 0px solid transparent;
+	}
+
+.optionIcon5 {
+	border-right: none;
+	}
+
+.optionIcon1 {
+	border-left: none;
+	}
 
 .sizePopup{
 
@@ -83,42 +100,53 @@
 	right: 0;
 	margin-left: auto;
  	margin-right: auto;
-
-}
+ 	transform: translateX(3.5%);
+	}
 
 .sizeIcon1,.sizeIcon2,.sizeIcon3,.sizeIcon4{
 	display: block;
 	font-size: 50px;
 	padding-left:0%;
 	padding-right:0%;
-}
+	}
+
+.sizeIcon1{font-size: 50px;} .sizeIcon2{font-size: 45px;} .sizeIcon3{font-size: 40px;} .sizeIcon4{font-size: 35px;}
 
 .colorPopup{
+
 	text-align: center;
  	vertical-align: center;
-	background: white;
-	border: var(--border-size) solid var(--border-color);
 	position: absolute;
 	bottom: 123%;
 	left: 0;
 	right: 0;
 	margin-left: auto;
  	margin-right: auto;
- 	transform: translateX(-25%);
+ 	transform: translateX(-40%);
  	visibility: hidden;
  	opacity: 0;
- 	
-
-}
+	}
 
 .colorIcon1,.colorIcon2,.colorIcon3,.colorIcon4,.colorIcon5{
 	display: inline-block;
-	margin-left: auto;
- 	margin-right: auto;
  	text-align: center;
  	vertical-align: center;
 	font-size: 50px;
-}
+	background: white;
+	border: 0px solid transparent;
+	padding:0px;
+	margin:0px;
+	}
+
+.colorIcon2,.colorIcon4{
+	border-right: var(--border-size) solid var(--border-color);
+	}
+.colorIcon3,.colorIcon4{
+	border-bottom: var(--border-size) solid var(--border-color);
+	}
+.colorIcon1,.colorIcon2{
+	border-top: var(--border-size) solid var(--border-color);
+	}
 
 .colorIcon1{color:#ff9f1c;} .colorIcon2{color:#e71d36;} .colorIcon3{color:#011627;} .colorIcon4{color:#72b0dc;}
 
@@ -136,8 +164,8 @@
 	left: 0;
 	right: 0;
 	bottom:-7%;
+	}
 
-}
 .downArrowColor{
 	width: 0px; 
   	height: 0px; 
@@ -151,60 +179,152 @@
 	margin-left: auto;
 	left: 0;
 	right: 0;
-	bottom:-13%;
+	bottom:-9%;
+	transform: translateX(120%);
 
-}
-
+	}
 
 .shirtLabel{
 	background: white;
 	margin:0px;
 	padding:0px;
-
-}
+	}
 
 .nameLabel,.priceLabel{
 	color: var(--zcolor-primary);
-	font-size: 24px;
-	font-family: 'Slabo 27px', serif;
+	font-size: 22px;
+	font-weight: lighter;
+	font-family: 'Open Sans', sans-serif;
 	display: inline-block;
-	margin: 0%;
-	padding: 4%;
-}
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 10%;
+	padding-top: 2%;
+	}
+
 .nameLabel{
 	float: left;
-	padding-left: 3%;
-}
+	}
+
 .priceLabel{
-	font-size: 24px;
-	font-family: 'Slabo 27px', serif;
+	font-weight: bold;
+	font-size: 22px;
 	display: inline-block;
 	float: right;
-
-}
-
+	}
 
 .optionIcon3:hover > .sizePopup{
 	visibility: visible;
 	opacity: 1;
 	transition: .5s ease all;
-}
+	}
+
 .button4:hover > .colorPopup{
 	visibility: visible;
 	opacity: 1;
 	transition: .5s ease all;
 
-}
+	}
 
-}
+@media (max-width: 1075px) {
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-}
+	.optionIcon1,.optionIcon2,.optionIcon3,.optionIcon4,.optionIcon5{
+		font-size: 48px;
+	}
 
+	}
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-}
+@media (max-width: 949px) {
+
+	.optionIcon1,.optionIcon2,.optionIcon3,.optionIcon4,.optionIcon5{
+		font-size: 35px;
+		}
+	.firstRow > .material-icons{
+		font-size: 30px;
+		}
+	.secondRow > .material-icons{
+		font-size: 30px;
+		}
+	.colorPopup{
+		transform: translateX(-31%);
+		}
+	.downArrowColor{
+		transform: translate(54%, 20%);
+		}
+	.downArrow{
+		transform: translateY(29%);
+		}
+	.sizeIcon1{font-size: 35px;} .sizeIcon2{font-size: 30px;} .sizeIcon3{font-size: 25px;} .sizeIcon4{font-size: 20px;}
+
+	}
+
+@media (max-width: 768px) {
+	.postBox{
+		margin:auto;
+		vertical-align: center;
+		text-align: center;
+		display: block;
+		width: 80%;
+		margin-bottom: 20%;
+		margin-top: 5%;
+
+		}
+
+	.shirtBox{
+		margin-bottom: 2%;
+		}
+
+	.optionIcon1,.optionIcon2,.optionIcon3,.optionIcon4,.optionIcon5{
+		font-size: 55.2px;
+		}
+
+	.firstRow > .material-icons{
+		font-size: 50px;
+		}
+
+	.secondRow > .material-icons{
+		font-size: 50px;
+		}
+
+	.downArrowColor{
+		transform: translateY(-10%);
+		}
+
+	.downArrow{
+		transform: translateY(-5%);
+		}
+
+	.sizeIcon1{font-size: 50px;} .sizeIcon2{font-size: 45px;} .sizeIcon3{font-size: 40px;} .sizeIcon4{font-size: 35px;}
+
+	.shirtLabel{
+		background: white;
+		padding-top: 0%;
+		}
+
+	.nameLabel,.priceLabel{
+		padding-top: 0%;
+		color: var(--zcolor-primary);
+		display: inline-block;
+		margin: 0%;
+		}
+
+	.nameLabel{
+		float: left;
+		padding-left: 1%;
+		}
+
+	.priceLabel{
+		padding-right: 1%;
+		display: inline-block;
+		float: right;
+	}
+	}
+
+@media (max-width: 400px) {
+	#page{
+		width: 400px;
+		max-width: 400px;
+	}
+
+	}
+
