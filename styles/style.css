@@ -214,6 +214,7 @@
 	}
 
 .optionIcon3:hover > .sizePopup{
+	color: var(--zcolor-primary);
 	visibility: visible;
 	opacity: 1;
 	transition: .5s ease all;
@@ -223,8 +224,9 @@
 	visibility: visible;
 	opacity: 1;
 	transition: .5s ease all;
-
 	}
+.optionIcon1:hover{color: white;background: var(--zcolor-primary);}.optionIcon2:hover{color: white;background: var(--zcolor-primary);}.optionIcon3:hover{color: white;background: var(--zcolor-primary);}.optionIcon4:hover{color: white;background: var(--zcolor-primary);}.optionIcon5:hover{color: white;background: var(--zcolor-primary);}
+
 
 @media (max-width: 1075px) {
 
